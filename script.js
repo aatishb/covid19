@@ -30,7 +30,7 @@ function processData(data) {
 		if (!countriesToLeaveOut.includes(country)) {
 
 			let slope = arr.map((e,i,a) => e - a[i - 7]);
-			let startIndex = slope.findIndex(e => e >= 50);
+			let startIndex = slope.findIndex(e => e >= 100);
 			let maxCases = arr[arr.length - 1];
 
 			if (startIndex > 0) {
